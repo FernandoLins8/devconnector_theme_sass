@@ -2,16 +2,17 @@
   &-group {
     margin: 1.2rem 0;
   }
+  
   &-text {
     display: block;
     margin-top: 0.3rem;
     color: #888;
   }
 
-  input[type='text'],
-  input[type='email'],
-  input[type='password'],
-  input[type='date'],
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="date"],
   select,
   textarea {
     display: block;
@@ -21,7 +22,7 @@
     border: 1px solid #ccc;
   }
 
-  input[type='submit'] {
+  input[type="submit"] {
     font: inherit;
   }
 

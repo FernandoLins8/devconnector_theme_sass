@@ -1,5 +1,6 @@
 @import 'config';
 @import 'utilities';
+
 @import 'form';
 
 * {
@@ -68,10 +69,10 @@ img {
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 80%;
     margin: auto;
-    align-items: center;
-    justify-content: center;
     text-align: center;
   }
 }
@@ -80,7 +81,7 @@ img {
 .profile {
   display: grid;
   grid-template-columns: 2fr 4fr 2fr;
-  grid-gap: 2rem;
+  gap: 2rem;
   align-items: center;
   padding: 1rem;
   line-height: 1.8;
@@ -90,8 +91,12 @@ img {
 // Profile Page
 .profile-grid {
   display: grid;
-  grid-template-areas: 'top top' 'about about' 'exp edu' 'github github';
-  grid-gap: 1rem;
+  grid-template-areas: 
+    'top top'
+    'about about'
+    'exp edu'
+    'github github';
+  gap: 1rem;
 
   .profile-top {
     grid-area: top;
@@ -114,7 +119,7 @@ img {
       }
     }
   }
-
+  
   .profile-about {
     grid-area: about;
     text-align: center;
@@ -135,13 +140,11 @@ img {
     grid-area: edu;
   }
 
-  .profile-exp,
-  .profile-edu {
-    & > div {
-      margin-bottom: 1rem;
-      padding-bottom: 1rem;
-      border-bottom: #ccc 1px dotted;
-    }
+  .profile-exp > div,
+  .profile-edu > div {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: #ccc 1px dotted;
 
     &:last-child {
       border: none;
@@ -162,7 +165,7 @@ img {
         flex: 7;
         flex-basis: 70%;
       }
-
+      
       & > div:last-child {
         flex: 3;
         flex-basis: 20%;
@@ -179,7 +182,7 @@ img {
 .post {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-gap: 2rem;
+  gap: 0.5rem;
   align-items: center;
 
   & > div:first-child {
@@ -187,7 +190,8 @@ img {
   }
 
   img {
-    width: 150px;
+    margin-top: 2rem;
+    width: 100px;
   }
 }
 
